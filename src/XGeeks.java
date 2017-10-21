@@ -18,15 +18,30 @@ public static void main(String[] args) {
 String superpower = JOptionPane.showInputDialog("What's Your SuperPower");
 		// 2. Ask the user to enter a name. Store their answer in a variable.
 String name = JOptionPane.showInputDialog("What's Your name?");
+String superpowera = JOptionPane.showInputDialog("What's Your SuperPower");
+String namea = JOptionPane.showInputDialog("What's Your name?");
+String superpowerb = JOptionPane.showInputDialog("What's Your SuperPower");
+String nameb = JOptionPane.showInputDialog("What's Your name?");
+String superpowerc = JOptionPane.showInputDialog("What's Your SuperPower");
+
+
+String namec = JOptionPane.showInputDialog("What's Your name?");
 		// 3. Show the superpower in a pop-up, depending on the name entered. 
 String ask = JOptionPane.showInputDialog("Who do you want to learn about");
+if(ask.equalsIgnoreCase(name) ) {
 JOptionPane.showMessageDialog(null, name + "'s superower is " + superpower + "!");
-String superpowera = JOptionPane.showInputDialog("What's Your SuperPower");
-String superpowerb = JOptionPane.showInputDialog("What's Your SuperPower");
-String superpowerc = JOptionPane.showInputDialog("What's Your SuperPower");
-String namea = JOptionPane.showInputDialog("What's Your name?");
-String nameb = JOptionPane.showInputDialog("What's Your name?");
-String namec = JOptionPane.showInputDialog("What's Your name?");
-	}
 }
+else if(ask.equalsIgnoreCase(namea)) {
+JOptionPane.showMessageDialog(null, namea + "'s superower is " + superpowera + "!");
+}
+else if(ask.equalsIgnoreCase(nameb)) {
+JOptionPane.showMessageDialog(null, nameb + "'s superower is " + superpowerb + "!");
+}
+else if(ask.equalsIgnoreCase(namec)) {
+JOptionPane.showMessageDialog(null, namec + "'s superower is " + superpowerc + "!");
+
+}
+}
+	}
+
 
